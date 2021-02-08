@@ -18,7 +18,7 @@ function App() {
 
         setX(x);
         setY(x);
-        setMines();
+        setMines(mines);
         e.preventDefault()
     }
 
