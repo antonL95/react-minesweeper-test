@@ -8,9 +8,17 @@ function App() {
     let [mines, setMines] = useState(20);
 
     const handelSubmit = (e) => {
-        setX(e.target.elements['x'].value);
-        setY(e.target.elements['x'].value);
-        setMines(e.target.elements['mines'].value);
+        let x = e.target.elements['x'].value;
+        let mines=e.target.elements['mines'].value;
+
+        if (x**2 < mines) {
+            alert('more mines then cells')
+            return;
+        }
+
+        setX(x);
+        setY(x);
+        setMines();
         e.preventDefault()
     }
 
