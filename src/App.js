@@ -12,7 +12,7 @@ function App() {
         let mines=e.target.elements['mines'].value;
 
         if (x**2 < mines) {
-            alert('more mines then cells')
+            alert('more mines than cells')
             return;
         }
 
